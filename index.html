@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="filter"></div>
+  <header>
+      <nav class="header__nav">
+        <img class="header__logo" src="assets/images/logo.svg" alt="#">
+        <ul class="header__list">
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+        <div class="header__menu">
+          <img class="header__menu--open" src="assets/images/icon-menu.svg" alt="open menu">
+          <img class="header__menu--close" src="assets/images/icon-menu-close.svg" alt="close menu">
+        </div>
+    </nav>
+  </header>
+
+  <main class="grid__container">
+    <section class="container__one">
+      <picture class="container__one--image">
+        <source media="(max-width:767px)" srcset="assets/images/image-web-3-mobile.jpg">
+        <img src="assets/images/image-web-3-desktop.jpg" alt="#">
+      </picture>
+      <h1 class="container__one--title">The Bright Future of Web 3.0?</h1>
+      <article class="container__one--article article__one">
+          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+        But is it really fulfilling its promise?</p>
+          <button class="btn">Read more</button>
+      </article>
+    </section>
+    <section class="container__two">
+      <h2 class="container__two--title">New</h2> 
+      <article class="container__two--article article__two">
+        <h3 class="article__two--title">Hydrogen VS Electric Cars</h3>
+        <p class="article__two--text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </article>
+      <hr>
+      <article class="container__two--article article__two">
+        <h3 class="article__two--title">The Downsides of AI Artistry</h3>
+        <p class="article__two--text">What are the possible adverse effects of on-demand AI image generation?</p>
+      </article>
+      <hr>
+      <article class="container__two--article article__two">
+        <h3 class="article__two--title">Is VC Funding Drying Up?</h3>
+        <p class="article__two--text">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </article>
+    </section>
+    <section class="container__three">
+      <article class="container__three--article article__three">
+        <img class="article__three--img" src="assets/images/image-retro-pcs.jpg" alt="image pc retro">
+        <div>
+          <h2 class="article__three--title">01</h2>
+          <h3 class="article__three--subtitle">Reviving Retro PCs</h3>
+          <p class="article__three--text">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </article>
+      <article class="container__three--article">
+        <img class="article__three--img" src="assets/images/image-top-laptops.jpg" alt="image laptot">
+        <div>
+          <h2 class="article__three--title">02</h2>
+          <h3 class="article__three--subtitle">Top 10 Laptops of 2022</h3>
+          <p class="article__three--text">Our best picks for various needs and budgets.</p>
+        </div>
+      </article>
+      <article class="container__three--article">
+        <img class="article__three--img" src="assets/images/image-gaming-growth.jpg" alt="image controller">
+        <div>
+          <h2 class="article__three--title">03</h2>
+          <h3 class="article__three--subtitle">The Growth of Gaming</h3>
+          <p class="article__three--text">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
